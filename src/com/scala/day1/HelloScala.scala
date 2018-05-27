@@ -5,6 +5,22 @@ package com.scala.day1
   */
 object HelloScala {
   def main(args: Array[String]): Unit = {
+
+    var age:Int = 20
+    var result = if(age<25){
+      age
+    }
+
+
+    println(result)
+//    result = if(age<25){
+//      age
+//    }else{
+//      ()
+//    }
+
+    println(age)
+
     println("hello scala")
   }
 
