@@ -7,6 +7,8 @@ object ConditionTest {
     var result = if(age>18)1 else 0
     println(result)
 
+
+    println("hello world")
   }
 
 }
