@@ -1,25 +1,25 @@
-package main.scala.com.scala.day4.caseDemo
+package cn.edu360.day04.casedemo
+
+/**
+  * Created by Huge
+  * DATE: 2018/5/30
+  * Desc: 
+  */
 
 object MatchOption {
-  /**
-    * Option类有两个子类，一个是Some样例类 一个是None 样例对象
-    */
-
-
-
 
   def main(args: Array[String]): Unit = {
-    val mp = Map[String,Int]("a1"->100,"a2"->2000)
+    val mp = Map[String,Int]("a1"->100,"a2"-> 2000)
 
-    val mayBeInt : Option[Int] = mp.get("a2")
+    val maybeInt: Option[Int] = mp.get("a1111")
 
-    //模式匹配 有返回值
-    val unit: Int = mayBeInt match {
+    // 模式匹配 是有返回值的
+    val result: Int = maybeInt match {
       case Some(v) => v
       case None => -1
     }
+    println(result)
 
-    println(unit)
+    mp.getOrElse("a1111",-1)
   }
-
 }
